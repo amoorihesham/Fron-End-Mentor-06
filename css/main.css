@@ -1,0 +1,113 @@
+/* Vars */
+:root {
+  --Main-BG: hsl(0, 0%, 95%);
+  --main-p-: hsla(0, 0%, 100%, 0.75);
+  --orange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --fontFamilylexand: "Lexend Deca", sans-serif;
+  --fontFamilyshoulder: "Big Shoulders Display", cursive;
+}
+/* ************************************************* */
+/* Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--Main-BG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+/* ************************************************* */
+.wraper {
+  width: 900px;
+  display: flex;
+  margin: 0 2rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  height: 490px;
+}
+.wraper img {
+  margin-bottom: 2rem;
+}
+.wraper .title {
+  text-transform: uppercase;
+  font-family: var(--fontFamilyshoulder);
+  font-size: 2.3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.wraper .description {
+  color: var(--main-p-);
+  margin-bottom: 4rem;
+  line-height: 1.8;
+}
+.wraper .btn {
+  display: block;
+  padding: 15px 35px;
+  background-color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--fontFamilylexand);
+  font-weight: 400;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+.sedans {
+  background-color: var(--orange);
+  padding: 45px;
+}
+.sedans .btn {
+  color: var(--orange);
+}
+.sedans .btn:hover {
+  color: #fff;
+  background-color: var(--orange);
+  border: 2px solid #fff;
+}
+.suvs {
+  background-color: var(--darkCyan);
+  padding: 45px;
+}
+.suvs .description {
+  padding: 0 1px;
+}
+.suvs .btn {
+  color: var(--darkCyan);
+}
+.suvs .btn:hover {
+  color: #fff;
+  background-color: var(--darkCyan);
+  border: 2px solid #fff;
+}
+.lexure {
+  background-color: var(--veryDarkCyan);
+  padding: 45px;
+}
+.lexure .btn {
+  color: var(--veryDarkCyan);
+}
+.lexure .btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: var(--veryDarkCyan);
+}
+/* ************************************************* */
+/* Responsive Design */
+@media (max-width: 1020px) {
+  .wraper {
+    flex-direction: column;
+    width: 330px;
+    height: 100%;
+    margin-top: 2rem;
+  }
+}
+/* **************************************************** */
